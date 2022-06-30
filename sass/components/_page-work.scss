@@ -1,0 +1,23 @@
+.work__list{
+   display: flex;
+   gap: 30px;
+}
+.work__item{
+   position:relative;
+}
+.work__text{
+   width: 100%;
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-top: 27px;
+   padding-bottom: 27px;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+
+   font-size: 14px;
+   text-align: center;
+   text-transform: uppercase;
+   background-color: $bg-work;
+   color: $background-color;
+}

@@ -1,0 +1,15 @@
+.page-header{
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid $border-header; 
+}
+
+@import './logo';
+
+.main-nav{
+   display: flex;
+   align-items: center;
+}
+
+@import './site-nav';
+@import './auth-nav';

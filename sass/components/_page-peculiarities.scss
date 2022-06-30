@@ -1,0 +1,35 @@
+.page-peculiarities {
+   padding-bottom: 0;
+}
+.feature{
+   display: flex;
+   gap: 30px;
+}
+.feature__title{
+   margin-top: 0;
+   margin-bottom: 10px;
+
+   color: $title-text-color;
+
+   font-size: 14px;
+   text-transform: uppercase;
+}
+.feature__text{
+   width: 270px;
+   margin-top: 0;
+   margin-bottom: 0;
+
+   line-height: 1.71;
+}
+.feature__icon{
+   width: 270px;
+   height: 120px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   background-color: $secondary-background-color;
+   border-radius: 4px;
+
+   margin-bottom: 30px;
+}

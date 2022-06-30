@@ -1,0 +1,36 @@
+.page-team{
+   background-color: $secondary-background-color;
+}
+.page-team__list{
+   display: flex;
+   gap: 30px;
+}
+.page-team__item{
+   background-color: $background-color;
+   box-shadow: $shadow;
+   border-radius: 0px 0px 4px 4px;
+}
+.page-team__info{
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+.page-team__title {
+   margin-top: 0px;
+   margin-bottom: 10px;
+
+   color: $title-text-color;
+
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.18;
+   text-align: center;
+}
+.page-team__text{
+   margin-top: 0;
+   margin-bottom: 16px;
+
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.18;
+   text-align: center;
+}

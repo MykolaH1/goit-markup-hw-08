@@ -1,0 +1,33 @@
+.page-footer__address {
+   margin-right: 70px;
+}
+.page-footer__item{
+   display: flex;
+   align-items: baseline;
+}
+.page-footer__logo {
+   color: $background-color;
+}
+
+.page-footer address{
+   margin-top: 20px;
+}
+.navigation__link{
+   color: $silver-color;
+
+   line-height: 1.71;
+   font-style: normal;
+   text-decoration: none;
+
+   transition: color $cubic;
+
+   &:hover, &:focus{
+      color: $accent-color;
+   }
+}
+.navigation:not(:last-child) {
+   margin-bottom: 9px;
+}
+.navigation__link-address{
+   color: $background-color;
+}

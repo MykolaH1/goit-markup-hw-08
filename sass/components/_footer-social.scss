@@ -1,0 +1,20 @@
+.footer-title{
+   margin-bottom: 20px;
+   font-size: 14px;
+   text-transform: uppercase;
+
+   color: $background-color;
+}
+.footer-social{
+   margin-right: 93px;
+}
+.footer-social__link{
+   background-color: $footer-bg;
+   fill: $background-color;
+
+   transition: background-color $cubic;
+
+   &:hover, &:focus{
+   background-color: $accent-color;
+   }
+}

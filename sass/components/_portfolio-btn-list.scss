@@ -1,0 +1,25 @@
+.portfolio-nav {
+   margin-top: 0;
+   margin-bottom: 50px;
+
+   display: flex;
+   justify-content: center;
+   gap: 8px;
+}
+.portfolio-nav__button {
+   padding: 6px 22px;
+   background-color: $secondary-background-color;
+   color: $title-text-color;
+
+   font-weight: 500;
+   line-height: 1.62;
+   letter-spacing: 0.03em;
+
+   transition: background-color $cubic, color $cubic, box-shadow $cubic;
+
+   &:hover, &:focus {
+      background-color: $accent-color;
+      color: $background-color;
+      box-shadow: $portfolio-shadow;
+   }
+}
