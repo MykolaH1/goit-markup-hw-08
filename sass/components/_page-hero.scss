@@ -1,40 +1,73 @@
 .page-hero{
-   max-width: 1600px;
-   margin-right: auto;
-   margin-left: auto;
-   padding-top: 200px;
-   padding-bottom: 200px;
+   // max-width: 1600px;
+   // margin-right: auto;
+   // margin-left: auto;
+   // padding-top: 200px;
+   // padding-bottom: 200px;
    
-   background-image: linear-gradient(to bottom, $color-gradient), url('../images/hero-img.jpg');
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
+   // background-image: linear-gradient(to bottom, $color-gradient), url('../images/hero-img.jpg');
+   // background-repeat: no-repeat;
+   // background-position: center;
+   // background-size: cover;
    
-   text-align: center;
+   // text-align: center;
+
+   @media screen and (min-width: 768px){
+      
+   }
+   @media screen and (min-width: 1200px){
+      
+   }
 }
 .page-hero__title{
-   width: 696px;
-   margin-top: 0;
-   margin-bottom: 30px;
-   margin-left: auto;
-   margin-right: auto;
+   // width: 696px;
+   // margin-top: 0;
+   // margin-bottom: 30px;
+   // margin-left: auto;
+   // margin-right: auto;
 
-   color: $background-color;
+   // color: $background-color;
 
-   font-size: 44px;
-   line-height: 1.36;
-   letter-spacing: 0.06em;
-   font-weight: 900;
-   text-transform: uppercase;
+   // font-size: 44px;
+   // line-height: 1.36;
+   // letter-spacing: 0.06em;
+   // font-weight: 900;
+   // text-transform: uppercase;
+   
+   @media screen and (min-width: 480px){
+      
+   }
+   @media screen and (min-width: 768px){
+      
+   }
+   @media screen and (min-width: 1200px){
+      
+   }
 }
 .page-hero__button{
-   padding: 10px 32px;
-   min-width: 200px;
+   
 
-   background-color: $accent-color;
-   color: $background-color;
 
-   font-weight: 700;
-   line-height: 1.88;
-   letter-spacing: 0.06em;
+   // padding: 10px 32px;
+   // min-width: 200px;
+
+   // background-color: $accent-color;
+   // color: $background-color;
+
+   // font-weight: 700;
+   // line-height: 1.88;
+   // letter-spacing: 0.06em;
+
+
+
+   @media screen and (min-width: 480px){
+    
+   }
+   @media screen and (min-width: 768px){
+      
+   }
+   @media screen and (min-width: 1200px){
+      
+   }
+
 }
