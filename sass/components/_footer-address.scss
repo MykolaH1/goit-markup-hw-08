@@ -1,10 +1,14 @@
 .page-footer__address {
-   margin-right: 70px;
+   margin-bottom: 60px;
+   @media screen and (min-width: 768px){
+      margin-right: 156px;
+   }
+   @media screen and (min-width: 1200px){
+      margin-right: 70px;
+      margin-bottom: 0;
+   }
 }
-.page-footer__item{
-   display: flex;
-   align-items: baseline;
-}
+
 .page-footer__logo {
    color: $background-color;
 }
@@ -26,7 +30,10 @@
    }
 }
 .navigation:not(:last-child) {
-   margin-bottom: 9px;
+   margin-bottom: 8px;
+   @media screen and (min-width: 1200px){
+      margin-bottom: 9px;
+   }
 }
 .navigation__link-address{
    color: $background-color;

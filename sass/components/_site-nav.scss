@@ -1,34 +1,48 @@
 .site-nav{
-   display: none;
+   // display: none;
    // display: flex;
    // margin-left: 93px;
    // gap: 50px;
+   @media screen and (min-width: 480px){
+      
+   }
+   @media screen and (min-width: 768px){
+         
+   }
+   @media screen and (min-width: 1200px){
+      
+   }
 }
 .site-nav__link{
+   
    // padding-top: 32px;
    // padding-bottom: 32px;
    // display: inline-block;
    // position: relative;
 
    &:hover, &:focus{
-      // color: $accent-color;
+      color: $accent-color;
    }
 }
+.site-nav__item{
+   margin-bottom: 32px;
+}
 
 
-.site-nav__link,
-.auth-nav__link {
-   // color: $title-text-color;
-   // font-weight: 500;
-   // font-size: 14px;
-   // line-height: 1.14;
-   // letter-spacing: 0.02em;
-   // text-decoration: none;
+.site-nav__link{
+   color: $title-text-color;
+   font-weight: 500;
+   font-size: 40px;
+   line-height: 1.17;
+   // // font-size: 14px;
+   // // line-height: 1.14;
+   letter-spacing: 0.02em;
+   text-decoration: none;
 
-   // transition: color $cubic
+   transition: color $cubic
 }
 .site-nav__link--active{
-   // color: $accent-color;
+   color: $accent-color;
 
    &::after{
       // position: absolute;

@@ -14,10 +14,28 @@
 
 <body>
    <!--section header-->
-   <!-- <header class="page-header">
+   <header class="page-header">
       <div class="container main-nav">
          <a href="./" class="logo"><span>Web</span>Studio</a>
-         <nav>
+
+         <button 
+            type="button" 
+            class="menu-button " 
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+         >
+            <svg class="burger-icon" 
+               width="40" 
+               height="40" 
+               aria-label="Переключатеть мобильного меню"
+            >
+               <use class="icon-cross" href="./images/symbol-defs.svg#close-menu"></use>
+               <use class="icon-menu" href="./images/symbol-defs.svg#burger-menu"></use>
+            </svg>
+         </button>
+         <div class="menu-container" id="menu-container" data-menu>
+            <nav>
             <ul class="site-nav list">
                <li class="site-nav__item">
                   <a href="./index.html" class="site-nav__link site-nav__link--active">Студия</a>
@@ -39,8 +57,8 @@
               info@devstudio.com
             </a>
           </li>
-          <li class="auth-nav__item">
-            <a href="tel:+38 099 111 11 11" class="auth-nav__link">
+          <li class="auth-nav__item auth-nav__item-phone">
+            <a href="tel:+38 099 111 11 11" class="auth-nav__link auth-nav__link-phone">
               <svg class="auth-nav__icon auth-nav__icon--phone" width="10" height="16">
                 <use href="./images/symbol-defs.svg#phone"></use>
               </svg>
@@ -48,14 +66,26 @@
             </a>
           </li>
         </ul>
+
+         </div>
+         
+
+         
+
+
+
       </div>
    </header>
-   <main> -->
+
+   <main> 
       <!--section hero-->
-      <!-- <section class="page-hero">
+      <section class="page-hero">
+         <div class="hero">
             <h1 class="page-hero__title">Эффективные решения для вашего бизнеса</h1>
             <button type="button" class="button page-hero__button" data-modal-open>Заказать услугу</button>
-      </section> -->
+         </div>
+            
+      </section>
       <!--section peculiarities-->
       <section class="section page-peculiarities">
          <div class="container">
@@ -283,7 +313,7 @@
          </div>
       </section>
       <!--section client-->
-      <!-- <section class="section">
+      <section class="section page-client">
       <div class="container">
          <h2  class="section-title">Постоянные клиенты</h2>
          <ul class="client__list list">
@@ -332,9 +362,9 @@
          </ul>
       </div>
       </section>
-   </main> -->
+   </main>
    <!--section footer-->
-   <!-- <footer class="page-footer">
+   <footer class="page-footer">
       <div class="container page-footer__item ">
          <div class="page-footer__address">
             <a href="./" class="logo page-footer__logo"><span>Web</span>Studio</a>
@@ -386,26 +416,26 @@
                         </li>
                      </ul>
          </div>
-          <form class="footer-form">
-            <h2 class="footer-title">Подпишитесь на рассылку</h2>
+         <form class="footer-form">
+            <h2 class="footer-title footer-form__title">Подпишитесь на рассылку</h2>
             <label for="" class="footer-form__label">
-              <input
-                class="footer-form__email"
-                type="email"
-                name="mail"
-                id="footer-mail"
-                placeholder="E-mail"
-              />
-              <button class="button footer-form__button" type="submit">
-                Подписаться
-                <svg class="footer-form__icon" width="24" height="24">
-                  <use href="./images/symbol-defs.svg#form-send"></use>
-                </svg>
-              </button>
+            <input
+               class="footer-form__email"
+               type="email"
+               name="mail"
+               id="footer-mail"
+               placeholder="E-mail"
+            />
+            <button class="button footer-form__button" type="submit">
+                  Подписаться
+                  <svg class="footer-form__icon" width="24" height="24">
+                     <use href="./images/symbol-defs.svg#form-send"></use>
+                  </svg>
+               </button>
             </label>
-          </form>
+         </form>
       </div>
-   </footer> -->
+   </footer>
    <!--modal window-->
    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -463,6 +493,7 @@
    </div> -->
 
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

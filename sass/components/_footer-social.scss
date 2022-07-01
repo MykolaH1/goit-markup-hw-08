@@ -1,4 +1,5 @@
 .footer-title{
+   margin-top: 0;
    margin-bottom: 20px;
    font-size: 14px;
    text-transform: uppercase;
@@ -6,7 +7,9 @@
    color: $background-color;
 }
 .footer-social{
-   margin-right: 93px;
+   @media screen and (min-width: 1200px){
+      margin-right: 93px;
+   }
 }
 .footer-social__link{
    background-color: $footer-bg;
