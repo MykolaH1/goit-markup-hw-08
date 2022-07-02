@@ -3,8 +3,24 @@
    margin-bottom: 50px;
 
    display: flex;
-   justify-content: center;
+   flex-wrap: wrap;
    gap: 8px;
+
+   @media screen and (min-width: 480px){
+      width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   @media screen and (min-width: 768px){
+      width: 768px;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+   }
+   @media screen and (min-width: 1200px){
+      flex-wrap: nowrap;
+      justify-content: center;
+   }
 }
 .portfolio-nav__button {
    padding: 6px 22px;
@@ -21,5 +37,15 @@
       background-color: $accent-color;
       color: $background-color;
       box-shadow: $portfolio-shadow;
+   }
+
+   @media screen and (min-width: 480px){
+      
+   }
+   @media screen and (min-width: 768px){
+      
+   }
+   @media screen and (min-width: 1200px){
+
    }
 }
