@@ -1,6 +1,6 @@
 .auth-nav {
-   display: flex;
-   flex-direction: column-reverse;
+   // display: flex;
+   // flex-direction: column-reverse;
    // display: inline-flex;
    // margin-left: auto;
    // gap: 50px;
@@ -26,18 +26,18 @@
    text-decoration: none;
 
    transition: color $cubic;
-   margin-bottom: 34px;
+   // margin-bottom: 34px;
 }
 .auth-nav__link-phone{
    
 
-   font-size: 34px;
-   line-height: 1.17;
+   // font-size: 34px;
+   // line-height: 1.17;
 
    color: #2196F3;
 }
 .auth-nav__item-phone{
-   margin-bottom: 34px;
+   // margin-bottom: 34px;
 }
 
 
@@ -53,19 +53,24 @@
 }
 
 .auth-nav__icon{
-   display: none;
+
+
+   @media screen and (max-width: 767px) {
+      display: none;
+   }
+   // display: none;
    @media screen and (min-width: 480px){
       
    }
    @media screen and (min-width: 768px){
-      display: block;
-      width: 16px;
-      height: 12px;
-      margin-right: 10px;
+      // display: block;
+      // width: 16px;
+      // height: 12px;
+      // margin-right: 10px;
    
-      fill: $primary-text-color;
+      // fill: $primary-text-color;
 
-      transition: fill $cubic;
+      // transition: fill $cubic;
 
    .auth-nav__link:hover &, 
    .auth-nav__link:focus & {

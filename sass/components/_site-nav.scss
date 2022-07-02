@@ -25,9 +25,11 @@
    }
 }
 .site-nav__item{
+   // margin-bottom: 32px;
+}
+.site-nav__item:not(:last-child){
    margin-bottom: 32px;
 }
-
 
 .site-nav__link{
    color: $title-text-color;
@@ -41,6 +43,9 @@
 
    transition: color $cubic
 }
+
+
+
 .site-nav__link--active{
    color: $accent-color;
 
