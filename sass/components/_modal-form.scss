@@ -40,9 +40,6 @@
       max-width: 450px;
       max-height: 609px;
    }
-   @media screen and (min-width: 768px){
-   
-   }
    @media screen and (min-width: 1200px){
       max-width: 528px;
    }
@@ -64,16 +61,6 @@
 
    background-color: $background-color;
    border: 1px solid $modal-border-color;
-
-   @media screen and (min-width: 480px){
-      
-   }
-   @media screen and (min-width: 768px){
-      
-   }
-   @media screen and (min-width: 1200px){
-
-   }
 }
 .modal-button__close{
    fill: #000000;
@@ -83,17 +70,6 @@
    .modal-button:hover &, .modal-button:focus &{
       fill: $accent-color;
    }
-
-
-   @media screen and (min-width: 480px){
-      
-   }
-   @media screen and (min-width: 768px){
-      
-   }
-   @media screen and (min-width: 1200px){
-
-   }
 }
 
 
@@ -102,16 +78,6 @@
    margin-left: auto;
    margin-right: auto;
    padding: 40px;
-
-   @media screen and (min-width: 480px){
-      
-   }
-   @media screen and (min-width: 768px){
-      
-   }
-   @media screen and (min-width: 1200px){
-
-   }
 }
 .form__title{
    margin-top: 0;
@@ -121,16 +87,6 @@
    text-align: center;
 
    color: $title-text-color;
-
-   @media screen and (min-width: 480px){
-      
-   }
-   @media screen and (min-width: 768px){
-      
-   }
-   @media screen and (min-width: 1200px){
-
-   }
 }
 .form-filed{
    position: relative;
@@ -139,17 +95,6 @@
    flex-direction: column;
    margin-bottom: 10px;
    cursor: pointer;
-   
-
-   @media screen and (min-width: 480px){
-      
-   }
-   @media screen and (min-width: 768px){
-      
-   }
-   @media screen and (min-width: 1200px){
-
-   }
 }
 .form-filed__label {
    margin-bottom: 4px;
@@ -160,17 +105,6 @@
    line-height: 1.16;
    
    letter-spacing: 0.01em;
-   
-
-   @media screen and (min-width: 480px){
-      
-   }
-   @media screen and (min-width: 768px){
-      
-   }
-   @media screen and (min-width: 1200px){
-
-   }
 }
 .form-filed__input{
    outline: transparent;
@@ -190,15 +124,6 @@
       color: $modal-placeholder-color;
    }
 
-   @media screen and (min-width: 480px){
-      
-   }
-   @media screen and (min-width: 768px){
-      
-   }
-   @media screen and (min-width: 1200px){
-
-   }
 }
 
 .coment-filed{
@@ -219,15 +144,6 @@
       border: 1px solid $accent-color;
    }
 
-   @media screen and (min-width: 480px){
-      
-   }
-   @media screen and (min-width: 768px){
-      
-   }
-   @media screen and (min-width: 1200px){
-
-   }
 }
 
 .form-policy{
@@ -236,12 +152,6 @@
 
    margin-bottom: 30px;
 
-   @media screen and (min-width: 480px){
-      
-   }
-   @media screen and (min-width: 768px){
-      
-   }
    @media screen and (min-width: 1200px){
       padding-right: 11px;
       padding-left: 11px;
@@ -257,12 +167,6 @@
    
    letter-spacing: 0.03em;
 
-   @media screen and (min-width: 480px){
-      
-   }
-   @media screen and (min-width: 768px){
-      
-   }
    @media screen and (min-width: 1200px){
       font-size: 14px;
       line-height: 1.71;
@@ -272,16 +176,6 @@
    margin-right: 7px;
    appearance: none;
    position: absolute;
-
-   @media screen and (min-width: 480px){
-      
-   }
-   @media screen and (min-width: 768px){
-      
-   }
-   @media screen and (min-width: 1200px){
-
-   }
 }
 .policy__check{
    margin-right: 7px;
@@ -299,31 +193,12 @@
       background-origin: content-box;
    }
 
-   @media screen and (min-width: 480px){
-      
-   }
-   @media screen and (min-width: 768px){
-      
-   }
-   @media screen and (min-width: 1200px){
-
-   }
 }
 
 
 .policy-link{
    color: $accent-color;
    margin-left: 6px;
-
-   @media screen and (min-width: 480px){
-      
-   }
-   @media screen and (min-width: 768px){
-      
-   }
-   @media screen and (min-width: 1200px){
-
-   }
 }
 .form-button{
    display: block;
@@ -340,19 +215,7 @@
    font-weight: 700;
    line-height: 1.88;
    letter-spacing: 0.06em;
-
-   @media screen and (min-width: 480px){
-      
-   }
-   @media screen and (min-width: 768px){
-      
-   }
-   @media screen and (min-width: 1200px){
-
-   }
 }
-
-
 .form-filed__icon{
    position: absolute;
    top: 50%;
@@ -367,17 +230,4 @@
    .form-filed__input:hover + &, .form-filed__input:focus + &{
       fill: $accent-color;
    }
-
-   @media screen and (min-width: 480px){
-      
-   }
-   @media screen and (min-width: 768px){
-      
-   }
-   @media screen and (min-width: 1200px){
-
-   }
 }
-
-
-
