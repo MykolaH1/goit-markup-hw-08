@@ -247,7 +247,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .auth-nav {
-    padding: 21px 0 0 84px;
+    padding: 21px 15px 0 84px;
     margin-bottom: 0;
   }
 }
@@ -257,6 +257,7 @@ img {
     display: -ms-flexbox;
     display: flex;
     gap: 30px;
+    padding: 0;
   }
 }
 
