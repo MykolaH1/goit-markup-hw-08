@@ -10,6 +10,11 @@
    @media screen and (min-width:768px){
       display: none;
    }
+
+   &:hover, 
+   &:focus {
+      fill: $accent-color;
+   }
 }
 .burger-icon{
 
@@ -17,6 +22,14 @@
 
 .menu-button .icon-cross{
    display: none;
+   fill: $black-color;
+  
+}
+.icon-cross{
+   .menu-button:hover &, 
+   .menu-button:focus & {
+      fill: $accent-color;
+   }
 }
 .menu-button.is-open .icon-cross{
    display: block;
@@ -29,9 +42,10 @@
 }
 .menu-container{
    
-   background-color: palegoldenrod;
-   padding: 48px 40px ;
+   background-color: $background-color;
+   
    @media screen and (max-width: 767px) {
+      padding: 48px 40px ;
       display: none;
       z-index: 10;
       position: absolute;
@@ -50,5 +64,9 @@
       display: flex;
       justify-content: space-between;
       flex-grow: 1;
+      
+   }
+   @media screen and (min-width:1200px) {
+      align-items: baseline;
    }
 }

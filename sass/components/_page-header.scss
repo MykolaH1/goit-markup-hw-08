@@ -4,12 +4,15 @@
    position: relative;
    border-bottom: 1px solid $border-header; 
    @media screen and (min-width: 480px){
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
    }
    @media screen and (min-width: 768px){
-         
+      max-width: 768px;
    }
    @media screen and (min-width: 1200px){
-      
+      max-width: 1200px;
    }
 }
 .main-nav{
@@ -25,7 +28,7 @@
       
    }
    @media screen and (min-width: 768px){
-         
+      align-items: baseline;
    }
    @media screen and (min-width: 1200px){
       
@@ -40,11 +43,16 @@
 
 
 .social-nav-header{
+   @media screen and (min-width: 768px){
+      display: none;
+   }
    // max-width: 320px;
    display: flex;
    align-items: center;
    flex-wrap: wrap;
    padding: 0;
+
+   
 }
 .social-list-header{
    list-style: none;
