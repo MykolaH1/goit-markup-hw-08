@@ -1542,6 +1542,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .container-menu {
-    display: contents;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }/*# sourceMappingURL=main.css.map */
