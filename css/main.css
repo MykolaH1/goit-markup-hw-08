@@ -8,11 +8,31 @@ body {
   letter-spacing: 0.03em;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 .container {
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .list {
@@ -58,16 +78,8 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 768px) {
-  .section {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 @media screen and (min-width: 1200px) {
   .section {
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -96,24 +108,6 @@ img {
   position: relative;
   border-bottom: 1px solid #ECECEC;
 }
-@media screen and (min-width: 480px) {
-  .page-header {
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media screen and (min-width: 768px) {
-  .page-header {
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .page-header {
-    max-width: 1200px;
-  }
-}
-
 .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -168,6 +162,7 @@ img {
   .site-nav {
     max-width: 1200px;
     margin-left: 93px;
+    margin-right: 260px;
   }
 }
 
@@ -251,7 +246,7 @@ img {
     display: -ms-flexbox;
     display: flex;
     gap: 30px;
-    padding: 0;
+    margin-left: auto;
   }
 }
 
@@ -368,12 +363,12 @@ img {
   color: #2196F3;
 }
 
-.page-hero {
+.hero {
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-img.jpg");
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-img.jpg");
   background-repeat: no-repeat;
@@ -382,30 +377,21 @@ img {
   text-align: center;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .page-hero {
+  .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-img@2x.jpg");
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-img@2x.jpg");
   }
 }
-
-.hero {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media screen and (min-width: 480px) {
-  .hero {
-    width: 480px;
-  }
-}
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -461,11 +447,6 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 480px) {
-  .feature {
-    max-width: 480px;
-  }
-}
 @media screen and (min-width: 768px) {
   .feature {
     max-width: 768px;
@@ -492,24 +473,19 @@ img {
   margin-right: auto;
 }
 
-.feature__item:not(:last-child) {
-  margin-bottom: 30px;
-}
-@media screen and (min-width: 1200px) {
-  .feature__item:not(:last-child) {
-    margin-bottom: 0;
-  }
-}
-
 .feature__title {
   margin-top: 0;
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
   color: #212121;
   font-size: 14px;
   text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .feature__title {
+    text-align: center;
+  }
 }
 
 .feature__text {
@@ -571,14 +547,9 @@ img {
   }
 }
 
-.page-work {
-  display: none;
-}
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .page-work {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
   }
 }
 
@@ -685,15 +656,8 @@ img {
 
 .page-team__photo {
   display: block;
-  max-width: 100%;
   height: auto;
 }
-@media screen and (min-width: 480px) {
-  .page-team__photo {
-    width: 450px;
-  }
-}
-
 .page-team__info {
   padding-top: 30px;
   padding-bottom: 24px;
@@ -767,12 +731,12 @@ img {
 }
 @media screen and (min-width: 480px) {
   .page-client {
-    width: 480px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
   .page-client {
-    width: 768px;
+    width: 738px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -788,10 +752,14 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   gap: 30px;
+}
+@media screen and (max-width: 767px) {
+  .client__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 @media screen and (min-width: 768px) {
   .client__list {
@@ -871,14 +839,8 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 1200px) {
-  .page-footer__item {
-    width: 480px;
-  }
-}
 @media screen and (min-width: 768px) {
   .page-footer__item {
-    width: 768px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -891,7 +853,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .page-footer__item {
-    width: 1200px;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -917,6 +878,11 @@ img {
 
 .page-footer__logo {
   color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  .page-footer__logo {
+    padding-top: 0;
+  }
 }
 
 .page-footer address {
@@ -1043,7 +1009,7 @@ img {
 
 .portfolio-nav {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1051,18 +1017,9 @@ img {
       flex-wrap: wrap;
   gap: 8px;
 }
-@media screen and (min-width: 480px) {
-  .portfolio-nav {
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 @media screen and (min-width: 768px) {
   .portfolio-nav {
-    max-width: 768px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 30px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1070,6 +1027,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .portfolio-nav {
+    margin-bottom: 50px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-box-pack: center;
@@ -1120,7 +1078,7 @@ img {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .card:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1146,6 +1104,12 @@ img {
     max-width: 354px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .card {
+    max-width: 370px;
+  }
+}
+
 .card__item {
   overflow: hidden;
   position: relative;
@@ -1531,7 +1495,7 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    height: 796px;
+    height: 100vh;
   }
   .menu-container.is-open {
     display: -webkit-box;
@@ -1551,9 +1515,6 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -1564,5 +1525,36 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container-menu {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-menu {
+    display: contents;
   }
 }/*# sourceMappingURL=main.css.map */

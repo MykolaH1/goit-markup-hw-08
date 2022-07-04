@@ -21,7 +21,7 @@
    }
 }
 .card:not(:last-child){
-   @media screen and (max-width:768px) {
+   @media screen and (max-width:767px) {
       margin-bottom: 30px;
    }
    
@@ -40,7 +40,7 @@
       max-width: 354px;
    }
    @media screen and (min-width: 1200px){
-
+      max-width: 370px;
    }
 }
 .card__item {

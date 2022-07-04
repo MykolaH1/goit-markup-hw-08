@@ -9,12 +9,31 @@ body{
    line-height: 1.14;
    letter-spacing: 0.03em;
 }
+body.no-scroll{
+   overflow: hidden;
+}
 .container{
-   // width: 1200px;
+   max-width: 100%;
    margin-left: auto;
    margin-right: auto;
-   padding-left: 15px;
-   padding-right: 15px;
+
+
+   // outline:2px solid red;
+   // outline-offset: -2px ;
+
+
+   @media screen and (min-width: 480px){
+      max-width: 450px;
+   }
+   @media screen and (min-width: 768px){
+      max-width: 768px;
+   }
+   @media screen and (min-width: 1200px){
+      max-width: 1200px;
+      padding-left: 15px;
+      padding-right: 15px;
+}
+
 }
 .list {
    padding: 0;

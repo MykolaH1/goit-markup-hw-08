@@ -11,6 +11,9 @@
 
 .page-footer__logo {
    color: $background-color;
+   @media screen and (max-width: 768px) {
+      padding-top: 0;
+   }
 }
 
 .page-footer address{
