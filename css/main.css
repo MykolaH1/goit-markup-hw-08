@@ -141,14 +141,8 @@ img {
   color: #2196F3;
 }
 
-@media screen and (min-width: 480px) {
-  .site-nav {
-    max-width: 480px;
-  }
-}
 @media screen and (min-width: 768px) {
   .site-nav {
-    max-width: 768px;
     height: 48px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -156,13 +150,6 @@ img {
     gap: 50px;
     margin-left: 88px;
     margin-bottom: 32px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .site-nav {
-    max-width: 1200px;
-    margin-left: 93px;
-    margin-right: 260px;
   }
 }
 
